@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlAddedProductsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnOmniPay"
+        style="@style/StyleButton"
+        android:layout_below="@id/rlAddedProductsList"
+        android:text="@string/omni_pay_button"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

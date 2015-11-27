@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rlPayOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ivPaypal"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/paypal_logo" />
+
+            <ImageView
+                android:id="@+id/ivPayumoney"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@id/ivPaypal"
+                android:src="@drawable/payumoney_logo" />
+
+            <ImageView
+                android:id="@+id/ivVisa"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/ivPaypal"
+                android:src="@drawable/visa_logo" />
+
+            <ImageView
+                android:id="@+id/ivMastercard"
+                android:layout_width="275dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/ivPayumoney"
+                android:layout_toRightOf="@id/ivVisa"
+                android:src="@drawable/mastercard_logo" />
+
+            <ImageView
+                android:id="@+id/ivBarclaycard"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/ivVisa"
+                android:src="@drawable/barclay_card_logo" />
+
+            <ImageView
+                android:id="@+id/ivPaytm"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:layout_below="@id/ivMastercard"
+                android:layout_toRightOf="@id/ivBarclaycard"
+                android:src="@drawable/paytm_logo" />
+
+
+            <ImageView
+                android:id="@+id/ivNetbanking"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ivBarclaycard"
+                android:src="@drawable/netbanking_logo" />
+
+            <RelativeLayout
+                android:id="@+id/rlOtherOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivNetbanking">
+
+                <ImageView
+                    android:id="@+id/ivOtherOptions"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/other_options" />
+
+                <TextView
+                    android:id="@+id/tvOtherOptions"
+                    style="@style/StyleGeneralText"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/ivOtherOptions"
+                    android:gravity="center_vertical"
+                    android:text="@string/other_options"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
